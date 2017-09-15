@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- StepView attributes define -->
+    <declare-styleable name="StepView">
+        <attr name="marker" format="color|reference" />
+        <attr name="markerSize" format="dimension" />
+        <attr name="markerPadding" format="dimension" />
+        <attr name="markerInCenter" format="boolean" />
+        <attr name="markerOffset" format="dimension" />
+
+        <attr name="line" format="color|reference" />
+        <attr name="startLine" format="color|reference" />
+        <attr name="endLine" format="color|reference" />
+        <attr name="lineSize" format="dimension" />
+        <attr name="lineOrientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+
+        <attr name="type" format="enum">
+            <enum name="start" value="0" />
+            <enum name="normal" value="1" />
+            <enum name="end" value="2" />
+            <enum name="onlyOne" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <!-- StateStepView attributes define -->
+    <declare-styleable name="StateStepView">
+        <attr name="inactiveStartLine" format="color|reference" />
+        <attr name="inactiveEndLine" format="color|reference" />
+        <attr name="inactiveMarker" format="color|reference" />
+        <attr name="activeStartLine" format="color|reference" />
+        <attr name="activeEndLine" format="color|reference" />
+        <attr name="activeMarker" format="color|reference" />
+        <attr name="completedStartLine" format="color|reference" />
+        <attr name="completedEndLine" format="color|reference" />
+        <attr name="completedMarker" format="color|reference" />
+
+        <attr name="state" format="enum">
+            <enum name="inactive" value="0x001" />
+            <enum name="active" value="0x010" />
+            <enum name="completed" value="0x100" />
+        </attr>
+
+    </declare-styleable>
+</resources>
